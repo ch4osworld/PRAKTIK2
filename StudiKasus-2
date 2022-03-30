@@ -1,0 +1,25 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int main()
+{
+	int a,jumlah_beli,jumlah[100], harga[100],ttl[100];
+	string nama_barang[100];
+	float total,bayar,x;
+	do
+	{
+		cout<<"1) Masukkan barang belanja "<<endl;
+		cout<<"2) Keluar"<<endl;
+		cout<<"masukkan pilihan : ";cin>>a;
+		cout<<endl;	
+		if(a==1)//percabangan
+		{
+			cout<<"Masukan Jumlah Beli : ";
+			cin>>jumlah_beli; 
+			cin.ignore();
+			for (int i=0; i<jumlah_beli;i++)//perulangan
+			{
+				cout<<endl;
+				cout<<"Nama Barang : ";
+				getline(cin,nama_barang[i]); 
+				cout<<"Harga       : ";
